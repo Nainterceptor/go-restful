@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/emicklei/go-restful"
-	"github.com/emicklei/go-restful/swagger"
+	"github.com/Nainterceptor/go-restful"
+	"github.com/Nainterceptor/go-restful/swagger"
 )
 
 // This example is functionally the same as the example in restful-user-resource.go
@@ -130,7 +130,7 @@ func main() {
 
 		// Optionally, specifiy where the UI is located
 		SwaggerPath:     "/apidocs/",
-		SwaggerFilePath: "/Users/emicklei/Projects/swagger-ui/dist"}
+		SwaggerFilePath: "/Users/Nainterceptor/Projects/swagger-ui/dist"}
 	swagger.InstallSwaggerService(config)
 
 	log.Printf("start listening on localhost:8080")

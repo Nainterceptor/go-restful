@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/emicklei/go-restful"
-	"github.com/emicklei/go-restful/swagger"
+	"github.com/Nainterceptor/go-restful"
+	"github.com/Nainterceptor/go-restful/swagger"
 )
 
 type Book struct {
@@ -42,7 +42,7 @@ func main() {
 
 		// Optionally, specifiy where the UI is located
 		SwaggerPath:     "/apidocs/",
-		SwaggerFilePath: "/Users/emicklei/xProjects/swagger-ui/dist"}
+		SwaggerFilePath: "/Users/Nainterceptor/xProjects/swagger-ui/dist"}
 	swagger.RegisterSwaggerService(config, restful.DefaultContainer)
 
 	log.Printf("start listening on localhost:8080")
